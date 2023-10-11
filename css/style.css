@@ -1027,7 +1027,45 @@ ul .close i{
     .content_categories button{
         font-size: .75rem;
     }
+
+    .products{
+        padding-inline:1rem;
+    }
+
+    .carrito-producto{
+        gap: .1rem;
+    }
+
+    .products .carrito-productos small{
+        font-size: .3rem;
+    }
+
+    .products .carrito-productos h3, .carrito-productos p{
+        font-size: .6rem;
+    }
+
+    .carrito-producto-subtotal{
+        display: none;
+    }
     
+    .carrito-producto-eliminar{
+        font-size: .75rem;
+    }
+
+    .carrito-acciones-vaciar{
+        font-size: .5rem;
+        padding: 10px 10px;
+        border-radius: 8px;
+    }
+
+    .carrito-acciones-derecha .carrito-acciones-total, .carrito-acciones-derecha .carrito-acciones-comprar{ 
+        font-size: .5rem;
+        padding: 10px 10px;
+    }
+
+    .carrito-vacio, .carrito-comprado{
+        font-size: .65rem;
+    }
 
 }
 
