@@ -57,7 +57,7 @@ function cargarProductosCarrito(){
     }
 
     actualizarBotonesEliminar();
-    actualizarTotal()
+    actualizarTotal();
 }
 
 cargarProductosCarrito();
@@ -89,7 +89,7 @@ function vaciarCarrito(){
 }
 
 function actualizarTotal(){
-    const totalCalculado = productosEnCarrito.reduce((acc,prod) => acc + (prod.cantidad * prod.price),0)
+    let totalCalculado = productosEnCarrito.reduce((acc,prod) => acc + (prod.cantidad * prod.price),0)
     total.innerText = `$${totalCalculado}`;
 }
 
