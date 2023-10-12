@@ -81,7 +81,6 @@ function cargarProductos(productos){
         divProduct.appendChild(div);
     })
     actualizarBotonesAgregar();
-    console.log(botonAgregar);
 }
 cargarProductos(productos);
 
@@ -115,7 +114,6 @@ function actualizarBotonesAgregar(){
 
 let ProductosEnCarrito;
 let productosEnCarritoLS = localStorage.getItem("productos-en-carrito");
-// const productosEnCarritoLS = JSON.parse(localStorage.getItem("productos-en-carrito"));
 if(productosEnCarritoLS){
     ProductosEnCarrito = JSON.parse(productosEnCarritoLS);
 }else{
@@ -124,6 +122,26 @@ if(productosEnCarritoLS){
 
 
 function agregarProductos(e){
+
+    Toastify({
+        text: "Producto agregado",
+        duration: 1500,
+        close: true,
+        gravity: "top",
+        position: "right", 
+        stopOnFocus: true, 
+        style: {
+            background: "linear-gradient(to right, #9b9a9a, #282828)",
+            borderRadius:"5px",
+            fontFamily: "DIN Neuzeit Grotesk",
+        },
+        offset: {
+            x: '1.5rem', 
+            y: '1.5rem' 
+        },
+        onClick: function(){} 
+    }).showToast();
+
     const idBoton = e.currentTarget.id;
     const productoAgregado = productos.find(prod => prod.id === idBoton);
 
@@ -137,6 +155,7 @@ function agregarProductos(e){
     
     localStorage.setItem("productos-en-carrito", JSON.stringify(ProductosEnCarrito));
 }
+
 
 /*MENU*/
 
