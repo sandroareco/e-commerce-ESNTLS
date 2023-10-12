@@ -162,7 +162,6 @@ function agregarProductos(e){
 const menu = document.querySelector("#menu-hamburguer");
 const open = document.querySelector("#open");
 const close = document.querySelector("#close");
-let header = document.querySelector(".content_prod");
 const body = document.body;
 let carritoIcon = document.querySelector(".content_icons_carrito_padre");
 let contentCategories = document.querySelector(".content_categories");
@@ -189,6 +188,6 @@ close.addEventListener("click", () => {
 
 window.addEventListener("scroll",scroll);
     function scroll(){
-        header = document.querySelector(".content_prod");
+        let header = document.querySelector(".content_prod");
         header.classList.toggle("below", window.scrollY>0);
 };

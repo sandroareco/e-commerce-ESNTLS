@@ -505,8 +505,6 @@ ul .close i{
     margin-left: .1rem;
 }
 
-/*ESTO SE EDITA*/
-
 .section_box_carrousel{
     margin-inline: 3rem;
     margin-bottom: 3rem;
@@ -515,8 +513,6 @@ ul .close i{
     max-width: 120em;
     overflow: hidden;
 }
-
-/*ESTO SE EDITA*/
 
 .section_box_carrousel .container_carrousel{
     width: 170%;
@@ -533,8 +529,6 @@ ul .close i{
 .container_carrousel .icons_star{
     margin-top: .6rem;
 }
-
-/*ESTO SE EDITA*/
 
 .section_box_carrousel .container_carrousel_secundary{
     width: calc(100% / 2 - 2em);

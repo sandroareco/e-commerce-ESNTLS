@@ -1,7 +1,6 @@
 const menu = document.querySelector("#menu-hamburguer");
 const open = document.querySelector("#open");
 const close = document.querySelector("#close");
-let header = document.querySelector(".content");
 let carritoIcon = document.querySelector(".content_icons_carrito_padre");
 let contentLogo = document.querySelector(".content_header");
 const body = document.body;
@@ -13,7 +12,7 @@ let footer = document.querySelector(".footer");
 
 window.addEventListener("scroll",scroll);
     function scroll(){
-        header = document.querySelector(".content");
+        let header = document.querySelector(".content");
         header.classList.toggle("below", window.scrollY>0);
 };
 

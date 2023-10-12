@@ -87,7 +87,7 @@ function eliminarDelCarrito(e){
         offset: {
             x: '1.5rem', 
             y: '1.5rem' 
-          },
+        },
         onClick: function(){} 
     }).showToast();
 
@@ -150,7 +150,6 @@ function botonCarritoComprar(){
 const menu = document.querySelector("#menu-hamburguer");
 const open = document.querySelector("#open");
 const close = document.querySelector("#close");
-let header = document.querySelector(".content_prod");
 const body = document.body;
 let contentLogo = document.querySelector(".content_header");
 
@@ -175,6 +174,6 @@ close.addEventListener("click", () => {
 
 window.addEventListener("scroll",scroll);
     function scroll(){
-        header = document.querySelector(".content_prod");
+        let header = document.querySelector(".content_prod");
         header.classList.toggle("below", window.scrollY>0);
 };
