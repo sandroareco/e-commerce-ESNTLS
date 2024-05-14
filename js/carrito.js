@@ -28,15 +28,15 @@ function cargarProductosCarrito(){
             div.innerHTML = `
             <img class="carrito-producto-imagen" src="${prod.img}" alt="${prod.title}">
             <div class="carrito-producto-title">
-                <small>titulo</small>
+                <small>title</small>
                 <h3>${prod.title}</h3>
             </div>
             <div class="carrito-producto-cantidad">
-                <small>cantidad</small>
+                <small>quantity</small>
                 <p>${prod.cantidad}</p>
             </div>
             <div class="carrito-producto-price">
-                <small>precio</small>
+                <small>price</small>
                 <p>$${prod.price}</p>
             </div>
             <div class="carrito-producto-subtotal">
@@ -73,7 +73,7 @@ function actualizarBotonesEliminar(){
 
 function eliminarDelCarrito(e){
     Toastify({
-        text: "Producto eliminado",
+        text: "Product removed",
         duration: 1500,
         close: true,
         gravity: "top",
@@ -104,13 +104,13 @@ botonVaciar.addEventListener("click",vaciarCarrito);
 function vaciarCarrito(){
 
     Swal.fire({
-        title: '¿Estás seguro?',
-        html: "Se borraran todos tus productos",
+        title: 'Are you sure?',
+        html: "All your products will be deleted",
         icon: 'question',
         showCancelButton: true,
         confirmButtonColor: '#282828',
         cancelButtonColor: '#747373',
-        confirmButtonText: 'Si',
+        confirmButtonText: 'Yes',
         cancelButtonText: 'No',
     }).then((result) => {
         if (result.isConfirmed) {
@@ -132,7 +132,7 @@ function botonCarritoComprar(){
     Swal.fire({
         position: 'center',
         icon: 'success',
-        title: 'Compra realizada con exito',
+        title: 'Purchase made successfully',
         showConfirmButton: false,
         timer: 1500
     })

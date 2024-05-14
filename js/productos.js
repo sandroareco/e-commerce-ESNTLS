@@ -16,7 +16,7 @@ const productos = [
     {
         id:"top-grey",
         img:"./images/img15_prod.webp",
-        title:"Top Grey",
+        title:"Grey Top",
         price: 5000,
         categories:{
             nombre:"Top Grey",
@@ -26,7 +26,7 @@ const productos = [
     {
         id:"bag-black",
         img:"./images/img9_prod.webp",
-        title:"Bag Black",
+        title:"Black Bag",
         price: 4500,
         categories:{
             nombre:"Bag Black",
@@ -46,7 +46,7 @@ const productos = [
     {
         id:"top-black",
         img:"./images/img25_prod.webp",
-        title:"Top Black",
+        title:"Black Top",
         price: 5000,
         categories:{
             nombre:"Top Black",
@@ -76,7 +76,7 @@ function cargarProductos(productos){
                 <img src="${prod.img}" alt="${prod.title}">
                 <h2>${prod.title}</h2>
                 <p>$${prod.price}</p>
-                <button class="agregar" id=${prod.id}>agregar al carrito</button>
+                <button class="agregar" id=${prod.id}>add to cart</button>
             `
         divProduct.appendChild(div);
     })
@@ -124,7 +124,7 @@ if(productosEnCarritoLS){
 function agregarProductos(e){
 
     Toastify({
-        text: "Producto agregado",
+        text: "Product added",
         duration: 1500,
         close: true,
         gravity: "top",
